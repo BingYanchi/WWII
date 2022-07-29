@@ -1,0 +1,105 @@
+playerJoin: "%player% &e加入了游戏 (&b%nowPlayers%&e/&b%maxPlayers%&e)"
+playerLeave: "%player% &e离开了游戏 (&b%nowPlayers%&e/&b%maxPlayers%&e)"
+playerDisconnect: "%team%%player% &e临阵脱逃"
+playerReconnect: "%team%%player% &e重返战场"
+
+startIn: "&e游戏将在 &b%time% &e秒后开始"
+
+blueTeamJoinTitle: "&a&l你成为了防守方"
+blueTeamJoinSubTitle: "争取击杀更多的敌人"
+
+redTeamJoinTitle: "&a&l你成为了进攻方"
+redTeamJoinSubTitle: "争取击杀更多的敌人"
+
+redTeamName: "&c[进攻方]"
+blueTeamName: "&9[防守方]"
+spectatorName: "&9[防守方]"
+
+tabRedTeam: "&c&l攻 &c"
+tabBlueTeam: "&9&l守 &9"
+tabSpectator: "&7&l观 &7"
+
+playerUnknownKill: "%killedTeam%%killedPlayer% &e死了"
+playerKill: "%killedTeam%%killedPlayer% &e被 %killerTeam%%killerPlayer% &e击杀"
+
+playerKilledTitle: "你死了"
+playerKilledSubTitle: "你被对方阵营的 %killedPlayer% 击杀了"
+
+blueWinTitle: "&a&l防守成功"
+blueWinSubTitle: "&e你成功抵御了袭击"
+
+blueLossTitle: "&c&l阵地失守"
+blueLossSubTitle: "&e你没能防守住进攻"
+
+redWinTitle: "&a&l进攻成功"
+redWinSubTitle: "&e你成功完成了登陆"
+
+redLossTitle: "&a&l进攻失败"
+redLossSubTitle: "&e你没能完成登陆"
+
+Info:
+  Tutorial: |-
+    &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+    &f                                   &l二战 : 登陆日
+    &f
+    &e&l    故事背景源自二战诺曼底登陆, 其他内容我也不知道
+    &e&l    这里的介绍只是临时的, 以后再改
+    &e&l    目前的获胜方式为哪个队先击杀 30 个人头获胜
+    &e&l    之后会改成不可复活的多回合制游戏
+    &f
+    &f  特别鸣谢: &e@冰砚炽 (插件制作) @纱纱不是傻傻 (地图制作) @一个甜布丁 (测试调试)
+    &f
+    &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+  End: |-
+    &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+    &f                                   &l二战 : 登陆日
+    &f
+    &f                           %winTeam% &e获得了最终的胜利
+    &f
+    &f                      &c进攻方&e击杀: %redKills%  -  &9防守方&e击杀: %blueKills%
+    &f                         &e全场 MVP: %mvpTeam%%mvpPlayer% (%mvpKills%)
+    &f
+    &a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+Scoreboard:
+  Title: "&e&l二战 : 登陆日"
+
+  Role:
+    RedTeam: "&c进攻方"
+    BlueTeam: "&9防守方"
+    Spectator: "&7旁观者"
+
+  Content:
+    Waiting: |-
+      &8%localtime%
+      &f
+      &f地图: &a%mapName%
+      &f玩家: &a%nowPlayers%/%maxPlayers%
+      &f 
+      &f等待中...
+      &f  
+      &eplay.yistars.net
+
+    Starting: |-
+      &8%localtime%
+      &f
+      &f地图: &a%mapName%
+      &f玩家: &a%nowPlayers%/%maxPlayers%
+      &f 
+      &f即将开始: &a%time% 秒
+      &f  
+      &eplay.yistars.net
+
+    Playing: |-
+      &8%localtime%
+      &f
+      &f阵营: %teamName%
+      &f 
+      &f剩余时间: &a%gameTime% 秒
+      &f  
+      &f进攻方击杀: &a%redKills%
+      &f防守方击杀: &a%blueKills%
+      &f   
+      &f击杀: &a%kills%
+      &f    
+      &eplay.yistars.net

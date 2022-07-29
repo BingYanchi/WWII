@@ -1,0 +1,22 @@
+main: cn.yistars.WWII.WWII
+author: Bing_Yanchi
+api-version: 1.13
+name: ${project.name}
+version: ${project.version}
+
+loadbefore:
+  - SlimeWorldManager
+softdepend:
+  - PlaceholderAPI
+  - NametagEdit
+depend:
+  - SlimeWorldManager
+
+commands:
+  WWII:
+    description: WWII
+
+permissions:
+  WWII.admin:
+    description: WWII Admin.
+    default: op
